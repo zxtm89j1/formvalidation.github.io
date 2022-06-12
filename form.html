@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="form-styles.css">
+
+    <style>
+        body {
+            background-image: url("background.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="form">
+        <fieldset>
+            <span>Fields with asterisk (<span class="asterisk">*</span>) are required!</span>
+            <legend>Patient Information</legend>
+            <div class="divRow">
+                <div class="firstChild">
+                    <div class="label label1"><label>First Name: <span class="asterisk">*</span></label></div>
+                    <div class="input"><input type="text" class="input-box" placeholder="Enter First Name" id="fName"></div>
+                </div>
+
+                <div class="secondChild">
+                    <div class="label"><label>Last Name: <span class="asterisk">*</span></label></div>
+                    <div class="input"><input type="text" class="input-box" placeholder="Enter Last Name" id="lName"></div>
+                </div>
+            </div>
+
+            <div class="divRow">
+                <div class="firstChild">
+                    <div class="label label1"><label>Birthdate: <span class="asterisk">*</span></label></div>
+                    <div class="input"><input type="date" class="input-box" id="birthdate"></div>
+                </div>
+
+                <div class="secondChild">
+                    <div class="label"><label>Sex <span class="asterisk">*</span></label></div>
+                    <div class="input">
+                        <select name="sex" id="sex" type="date" class="input-box">
+                            <option>Choose Sex here</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divRow">
+                <div class="firstChild">
+                    <div class="label label1"><label>Email Address: <span class="asterisk">*</span></label></div>
+                    <div class="input"><input type="email" class="input-box" placeholder="Enter a valid Email Address" id="email"></div>
+                </div>
+
+                <div class="secondChild">
+                    <div class="label"><label>Address 1: <span class="asterisk">*</span></label></div>
+                    <div class="input"><input type="text" class="input-box" placeholder="Enter Address here" id="address1"></div>
+                </div>
+            </div>
+
+            
+            <div class="divRow">
+                <div class="firstChild">
+                    <div class="label label1"><label>Pref. Phone <span class="asterisk">*</span></label></div>
+                    <div class="input radioMain">
+                        <div class="inputChild"><input type="radio" name="prefPhone"><label for="Personal" class="labelPhone">Personal</label></div>
+                        <div class="inputChild"><input type="radio" name="prefPhone"><label for="Work" class="labelPhone">Work</label></div>
+                        <div class="inputChild"><input type="radio" name="prefPhone"><label for="Cel" class="labelPhone">Cel</label></div>
+                    </div>
+                </div>
+
+                <div class="secondChild">
+                    <div class="label"><label>Address 2: </label></div>
+                    <div class="input"><input type="text" class="input-box" placeholder="Enter Address here" id="address2"></div>
+                </div>
+            </div>
+
+            <div class="divRow">
+                <div class="firstChild">
+                    <div class="label label1"><label>Personal Phone:</label></div>
+                    <div class="input"><input type="phone" class="input-box" placeholder="Enter a valid phone number here" id="personalPhone"></div>
+                </div>
+
+                <div class="secondChild">
+                    <div class="label"><label>City: <span class="asterisk">*</span></label></div>
+                    <div class="input"><input type="text" class="input-box" placeholder="Enter City here" id="city"></div>
+                </div>
+            </div>
+
+            <div class="divRow">
+                <div class="firstChild">
+                    <div class="label label1"><label>Home/Work Phone:</label></div>
+                    <div class="input"><input type="phone" class="input-box" placeholder="Enter a valid phone number here" id="homePhone"></div>
+                </div>
+
+                <div class="secondChild">
+                    <div class="label"><label>Province: <span class="asterisk">*</span></label></div>
+                    <div class="input"><input type="text" class="input-box cellPhone" placeholder="Enter Province here" id="province"></div>
+                </div>
+            </div>
+
+            <div class="divRow">
+                <div class="firstChild">
+                    <div class="label label1"><label>Cell Phone:</label></div>
+                    <div class="input"><input type="phone" class="input-box" placeholder="Enter a valid phone number here" id="cellPhone1"></div>
+                </div>
+
+                <div class="secondChild">
+                    <div class="label"><label>Zip Code: <span class="asterisk">*</span></label></div>
+                    <div class="input"><input type="text" class="input-box" placeholder="Enter Zip Code here" id="zip"></div>
+                </div>
+            </div>
+
+            <div class="divRow1">
+                <div class="firstChild1">
+                    <div class="label label2"><label>Medications that the patient are currently taking:</label></div>
+                    <div class="input1"><textarea name="medications" id="medications1" class="medications"></textarea></div>
+                </div>
+            </div>
+
+            <div class="divRow1">
+                <div class="firstChild1">
+                    <div class="label label2"><label>Name of family doctor:</label></div>
+                    <div class="input1"><input type="text" class="doctorName"></div>
+                </div>
+            </div>
+
+            <div class="divRow1">
+                <div class="firstChild1">
+                    <div class="label label2"><label>List any allergies</label></div>
+                    <div class="input1"><textarea id="allergies1" class="allergies1"></textarea></div>
+                </div>
+            </div>
+
+            <div class="divRow1">
+                <div class="firstChild1">
+                    <div class="label label2"><label>Date of Last Health Exam</label></div>
+                    <div class="input1"><input type="date" class="date-exam" id="date-exam"></div>
+                </div>
+            </div>
+            
+            <button id="submitBtn">Submit</button>
+            
+
+            
+            <div class="modal-background">
+                <div class="modal">
+                    <div class="modal-title"><div>Review Patient Details</div></div>
+                    <div>First Name: <span class="modal-fName"></span></div>
+                    <div>Last Name: <span class="modal-lName"></span></div>
+                    <div>Birthdate: <span class="modal-birthdate"></span></div>
+                    <div>Sex: <span class="modal-sex"></span></div>
+                    <div>Email Address: <span class="modal-email"></span></div>
+                    <div>Address 1: <span class="modal-address1"></span></div>
+                    <div>Address 2: <span class="modal-address2"></span></div>
+                    <div>Personal Phone: <span class="modal-personalPhone"></span></div>
+                    <div>Home/Work Phone <span class="modal-homePhone"></span></div>
+                    <div>Cell Phone: <span class="modal-cell"></span></div>
+                    <div>City: <span class="modal-city"></span></div>
+                    <div>Province: <span class="modal-province"></span></div>
+                    <div>Zip Code: <span class="modal-zip"></span></div>
+                    <div>Medications that the patient are currently taking: <span class="modal-medication"></span></div>
+                    <div>Family Doctor: <span class="modal-doctor"></span></div>
+                    <div>Allergies: <span class="modal-allergies"></span></div>
+                    <div>Date of Last Health Exam: <span class="modal-healthExam"></span></div>
+                    <div>
+                        <button type="submit" class="modal-submit">Submit</button>
+                        <div id="cancel">Edit Patient Info and Close</div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </fieldset>
+    </form>
+
+
+
+    <script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Care System</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+    background-image: url("doctor.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+            <table>
+                <form id="form" action="form.html" action="form.html" method="GET">
+                    <tr class="trLogIn">
+                        <td class="td-label"><label for="Username" class="label">Username</label></td>
+                        <td class="td-input"><input type="text" class="input-login" id="input-login-username"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td id="error-username"></td>
+                    </tr>
+        
+                    <tr class="trLogIn">
+                        <td class="td-label"><label for="Username" class="label">Password</label></td>
+                        <td class="td-input"><input type="password" class="input-login" id="input-login-password"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td id="error-password"></td>
+                    </tr>
+
+                    <tr class="trSubmit"><td class="tdSubmit" colspan="2"><button type="submit" class="submitBtn">Submit</button></td></tr>
+                </form>
+            </table>
+        
+    </div>
+    
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

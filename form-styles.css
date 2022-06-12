@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-left: 5%;
+    padding-top: 8%;
+}
+
+form {
+    width: 50%;
+    
+}
+
+fieldset {
+    padding: 2%
+}
+
+legend {
+    color: gray;
+    font-size: 3vh;
+}
+
+.divRow {
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.firstChild {
+    flex: 1;
+    display: flex;
+    margin-right: 1%;
+}
+
+.label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    
+}
+
+.asterisk {
+    color: red
+}
+
+input, select, textarea {
+    padding: 2%;
+}
+
+
+.input {
+    flex: 2
+}
+
+.input-box {
+    width: 100%;
+}
+
+.secondChild {
+    flex: 1;
+    display: flex;
+}
+
+.radioMain {
+    display: flex;
+    align-items: center;
+}
+
+.inputChild {
+    flex: 1
+}
+
+.labelPhone {
+    margin-left: 5%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.firstChild1 {
+    display: flex;
+}
+
+.label2 {
+    flex: 1;
+}
+
+.input1 {
+    flex: 2;
+    margin-left: 1%;
+}
+
+.doctorName {
+    width: 100%;
+}
+
+.divRow1 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.input1, .date-exam {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    padding: 1%;
+    font-size: 2vh;
+    background-color: #00b1b6;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #699192;
+}
+
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0s opacity 0.5s;  
+}
+
+.modalClose {
+    cursor: pointer;
+}
+
+.modal {
+    background-color: white;
+    width: 50%;
+    padding: 1%;
+}
+
+
+.modal-title {
+    display: flex;
+    justify-content: center;
+    font-size: 3vh;
+}
+
+.modal > div {
+    font-size: 2vh;
+    padding: 0.5%;
+}
+
+#cancel {
+    background-color: red; 
+    width: 100%; 
+    color: white; 
+    border: none; 
+    padding: 1%; 
+    text-align: center; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#cancel:hover {
+    background-color: rgb(158, 88, 88);
+}
+
+.modalActive {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalClose {
+    width: 100%;
+    padding: 1%;
+    font-size: 2vh;
+    background-color: #00b1b6;
+    border: none;
+    color: white;
+}
+
+.modal span {
+    color: red;
+}
+

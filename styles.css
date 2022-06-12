@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.label {
+    font-size: 2rem;
+    padding-right: 1vh;
+}
+
+#error-username, #error-password {
+    color: red;
+}
+
+.input-login {
+    height: 100%;
+    width: 100%;
+    font-size: large;
+    padding-left: 1.5vh;
+}
+
+.td-input {
+    width: 100%;;
+}
+
+
+tr {
+    height: 100%;
+    width: 100%;
+}
+
+.trLogIn {
+    padding-top: 0.5vh;
+}
+
+
+
+table {
+    height: 100%;
+    width: 50vh;
+}
+
+.main {
+    margin-left: 15vh;
+    margin-top: 40vh;
+    
+}
+
+.submitBtn {
+    width: 100%;
+    height: 100%;
+    padding: 1vh;
+    font-size: large;
+    background-color: #00b1b6;
+    border: none;
+    color: white;
+}
+
+.tdSubmit {
+    width: 100%;
+    padding-top: 3vh;
+    height: 100%;
+    
+}
+
+.trSubmit {
+    width: 100%;
+    
+}
